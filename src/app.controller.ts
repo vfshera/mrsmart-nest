@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  @Render('welcome')
+  @Render('pages/welcome')
   getHello(): { msg: string } {
     return { msg: 'HBS Working Nice!' };
   }
