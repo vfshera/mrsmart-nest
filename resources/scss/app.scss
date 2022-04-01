@@ -152,7 +152,7 @@ main.mrsmart-parent {
 .login-page {
   @apply flex flex-col justify-center items-center min-h-screen;
   form {
-    @apply w-2/5 bg-white p-10 shadow-xl rounded-md;
+    @apply w-3/5 lg:w-2/5 bg-white p-10 shadow-xl rounded-md;
 
     button {
       @apply bg-primary text-white px-14 py-3 mt-5 rounded;

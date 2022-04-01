@@ -1,8 +1,9 @@
 
 <div class="login-page">
-  <form action="">
+  <form action="login" method="POST">
     {{> form/input-field label="Email"}}
     {{> form/input-field label="Password" inputType="password"}}
+    {{!-- <input type="hidden" name="_csrf" value="{{csrf_token}}"> --}}
     <button>Login</button>
   </form>
 </div>
