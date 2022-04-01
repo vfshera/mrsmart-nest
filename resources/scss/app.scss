@@ -149,6 +149,17 @@ main.mrsmart-parent {
   height: 100%;
 }
 
+.login-page {
+  @apply flex flex-col justify-center items-center min-h-screen;
+  form {
+    @apply w-2/5 bg-white p-10 shadow-xl rounded-md;
+
+    button {
+      @apply bg-primary text-white px-14 py-3 mt-5 rounded;
+    }
+  }
+}
+
 .not-found-page {
   @apply p-10 sm:p-20 min-h-[80vh] flex justify-center items-center flex-col;
 

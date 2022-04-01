@@ -5,17 +5,7 @@ import { SiteInfo } from './interfaces/siteInfo';
 @Injectable()
 export class AppService {
   welcome() {
-    const siteInfo: SiteInfo = {
-      name: 'MrSmart',
-      operation_day_from: 'Mon',
-      operation_day_to: 'Fri',
-      operation_time_from: '8am',
-      operation_time_to: '5pm',
-      location: 'Mpeketoni , Lamu',
-      email: 'info@mrsmartcs.com',
-      phone: '+254113350588',
-    };
-
+    const { siteInfo } = this.getSiteInfo();
     const services: IService[] = [
       {
         name: 'Dry Cleaning',
@@ -64,5 +54,20 @@ export class AppService {
     time_to: string,
   ): string {
     return `${day_from} - ${day_to} : ${time_from} - ${time_to}`;
+  }
+
+  getSiteInfo() {
+    const siteInfo: SiteInfo = {
+      name: 'MrSmart',
+      operation_day_from: 'Mon',
+      operation_day_to: 'Fri',
+      operation_time_from: '8am',
+      operation_time_to: '5pm',
+      location: 'Mpeketoni , Lamu',
+      email: 'info@mrsmartcs.com',
+      phone: '+254113350588',
+    };
+
+    return { siteInfo };
   }
 }

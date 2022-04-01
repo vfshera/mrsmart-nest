@@ -27,6 +27,12 @@ async function bootstrap() {
       concat(strOne: string, strTwo: string) {
         return strOne + strTwo;
       },
+      isEven(subject, truthyValue: string, falsyValue: string) {
+        return subject % 2 == 0 ? truthyValue : falsyValue;
+      },
+      isOdd(subject, truthyValue: string, falsyValue: string) {
+        return subject % 2 != 0 ? truthyValue : falsyValue;
+      },
     },
     extname: '.hbs',
     defaultLayout: 'layout',

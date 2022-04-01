@@ -111,12 +111,12 @@
     <div class="service-list">
 
       {{#each services as |service|}}
-        <div class="service">
+        <div data-aos="{{isEven @key 'flip-left'  'flip-right' }}" class="service">
 
           {{{service.icon}}}
 
           <div class="service-info">
-            <p>{{service.name}}</p>
+            <p> {{service.name}}</p>
             <span>
 
               <svg
