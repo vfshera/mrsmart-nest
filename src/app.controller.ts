@@ -7,7 +7,7 @@ export class AppController {
 
   @Get()
   @Render('pages/welcome')
-  getHello(): { msg: string } {
-    return { msg: 'HBS Working Nice!' };
+  welcome() {
+    return this.appService.welcome();
   }
 }
