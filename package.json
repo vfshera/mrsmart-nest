@@ -40,6 +40,7 @@
     "csurf": "^1.11.0",
     "express-handlebars": "^6.0.3",
     "express-session": "^1.17.2",
+    "helmet": "^5.0.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"

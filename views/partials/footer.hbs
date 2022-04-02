@@ -19,7 +19,12 @@
   <div class="quick-links">
     <p>Quick Links</p>
 
-    <a href="/#hero" class="quick-link">Top</a>
+    <a href="{{isRoute routePath '/#hero' '/'}}" class="quick-link">{{isValue
+        routePath
+        "/"
+        "Back To Top"
+        "Go to Home"
+      }}</a>
     <a href="/#contact" class="quick-link">Contact</a>
     <a href="/#services" class="quick-link">Services</a>
 

@@ -389,6 +389,11 @@ main.mrsmart-parent {
 
   .call-number {
     @apply cursor-pointer p-2 lg:px-4 hover:bg-primary border-2 border-primary rounded-full transition-colors duration-200 delay-75 hover:shadow-accent/50 hover:shadow-md animate-pulse lg:animate-none;
+    &:hover {
+      a {
+        @apply text-white;
+      }
+    }
 
     a {
       @apply hidden lg:block  text-primary;

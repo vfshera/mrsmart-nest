@@ -1322,6 +1322,10 @@ main.mrsmart-parent{
     padding-right: 1rem;
   }
 }
+.navbar .call-number:hover a{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .navbar .call-number a{
   display: none;
   --tw-text-opacity: 1;

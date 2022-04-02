@@ -25,7 +25,7 @@
     <ul>
 
       <li class="nav-link" @click=" showMobileNav = ! showMobileNav">
-        <a href="/#hero">Home</a>
+        <a href="{{isRoute routePath '/#hero' '/'}}">Home</a>
       </li>
       <li class="nav-link" @click=" showMobileNav = ! showMobileNav">
         <a href="/#services">Services</a>
@@ -41,7 +41,7 @@
   <nav>
     <ul @click.outside="showMobileNav = false">
       <li class="nav-link">
-        <a href="/#hero">Home</a>
+        <a href="{{isRoute routePath '/#hero' '/'}}">Home</a>
       </li>
       <li class="nav-link">
         <a href="/#services">Services</a>

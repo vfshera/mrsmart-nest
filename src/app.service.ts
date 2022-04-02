@@ -4,7 +4,7 @@ import { SiteInfo } from './interfaces/siteInfo';
 
 @Injectable()
 export class AppService {
-  welcome() {
+  welcome(routePath) {
     const { siteInfo } = this.getSiteInfo();
     const services: IService[] = [
       {
@@ -44,6 +44,7 @@ export class AppService {
         siteInfo.operation_time_to,
       ),
       services,
+      routePath,
     };
   }
 
